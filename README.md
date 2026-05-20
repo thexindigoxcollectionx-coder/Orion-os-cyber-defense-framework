@@ -111,3 +111,11 @@ spec:
     nonLinearThreadScheduling: true
     dynamicMemoryRandomization: true
     decoupleHardwareAddresses: true
+
+graph TD
+    A[Orion-OS Input] --> B{Trifold Cord Protocol}
+    B -- Integrity Valid --> C[Dynamic State Shifting]
+    B -- Integrity Failure --> D[Total Retention Mode]
+    C --> E[Ephemeral Execution Space]
+    D --> F[Forensic Capture & Isolation]
+    F --> G[Admin Notification]
